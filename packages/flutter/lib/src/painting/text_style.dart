@@ -720,6 +720,7 @@ class TextStyle with Diagnosticable {
     Color? decorationColor,
     TextDecorationStyle? decorationStyle,
     double? decorationThickness,
+    String? package,
     String? debugLabel,
   }) {
     assert(color == null || foreground == null, _kColorForegroundWarning);
@@ -752,6 +753,7 @@ class TextStyle with Diagnosticable {
       decorationColor: decorationColor ?? this.decorationColor,
       decorationStyle: decorationStyle ?? this.decorationStyle,
       decorationThickness: decorationThickness ?? this.decorationThickness,
+      package: package ?? _package,
       debugLabel: newDebugLabel,
     );
   }
